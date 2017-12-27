@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 
-COPY . /faithcoin
-WORKDIR /faithcoin
+COPY faithcoin.conf ~/.faithcoin/faithcoin.conf
+
+COPY . ~/faithcoin
+WORKDIR ~/faithcoin
 
 #shared libraries and dependencies
 RUN apt update
@@ -29,4 +31,4 @@ RUN make install
 #open service port
 EXPOSE 9666 19666
 
-CMD ["faithcoind", "--conf=/.faithcoin/faithcoin.conf", "--printtoconsole"]
+CMD ["faithcoind", "--conf=~/.faithcoin/faithcoin.conf", "--printtoconsole"]
