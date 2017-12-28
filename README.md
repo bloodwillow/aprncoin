@@ -1,4 +1,4 @@
-Faithcoin Core integration/staging tree
+faithcoin Core integration/staging tree
 =====================================
 
 [![Build Status](https://travis-ci.org/faithcoin-project/faithcoin.svg?branch=master)](https://travis-ci.org/faithcoin-project/faithcoin)
