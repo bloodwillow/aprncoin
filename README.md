@@ -3,19 +3,19 @@ Faithcoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/faithcoin-project/faithcoin.svg?branch=master)](https://travis-ci.org/faithcoin-project/faithcoin)
 
-https://faithco.in
+http://faithco.in
 
 What is faithcoin?
 ----------------
 
-Faithcoin is an experimental digital currency that enables instant payments to
+faithcoin is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. faithcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. faithcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the faithcoin Core software, see [https://faithco.in](https://faithco.in).
+the faithcoin Core software, see [http://faithco.in](http://faithco.in).
 
 License
 -------
