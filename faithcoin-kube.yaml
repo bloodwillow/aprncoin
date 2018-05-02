@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: faithcoin
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: faithcoin
+  template:
+    metadata:
+      labels:
+        app: faithcoin
+        version: v0.15
+    spec:
+      containers:
+      - name: faithcoin
+        image: toolboc/faithcoin
+        ports:
+        - containerPort: 9666
+          name: faithcoin
+          protocol: TCP
