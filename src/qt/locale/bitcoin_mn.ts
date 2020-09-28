@@ -126,8 +126,8 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>faithcoin</source>
-        <translation>faithcoin</translation>
+        <source>aprncoin</source>
+        <translation>aprncoin</translation>
     </message>
     <message>
         <source>Wallet</source>

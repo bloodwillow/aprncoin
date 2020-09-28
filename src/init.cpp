@@ -525,7 +525,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/faithcoin-project/faithcoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/aprncoin-project/aprncoin>";
     const std::string URL_WEBSITE = "<https://faithco.in>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
@@ -815,7 +815,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("faithcoin version %s\n", FormatFullVersion());
+    LogPrintf("aprncoin version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

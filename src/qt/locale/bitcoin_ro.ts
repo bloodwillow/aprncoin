@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a faithcoin address</source>
-        <translation>Trimite monedele către o adresă faithcoin</translation>
+        <source>Send coins to a aprncoin address</source>
+        <translation>Trimite monedele către o adresă aprncoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>faithcoin</source>
-        <translation>faithcoin</translation>
+        <source>aprncoin</source>
+        <translation>aprncoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your faithcoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de faithcoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your aprncoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de aprncoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified faithcoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de faithcoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified aprncoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de aprncoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and faithcoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și faithcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and aprncoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și aprncoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a faithcoin: URI or payment request</source>
-        <translation>Deschide un faithcoin: URI sau cerere de plată</translation>
+        <source>Open a aprncoin: URI or payment request</source>
+        <translation>Deschide un aprncoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -748,8 +748,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>faithcoin Core</source>
-        <translation>faithcoin Core</translation>
+        <source>aprncoin Core</source>
+        <translation>aprncoin Core</translation>
     </message>
     <message>
         <source>Information</source>

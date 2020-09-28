@@ -130,8 +130,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a faithcoin address</source>
-        <translation>Пошаљите новац на faithcoin адресу</translation>
+        <source>Send coins to a aprncoin address</source>
+        <translation>Пошаљите новац на aprncoin адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

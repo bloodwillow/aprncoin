@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "faithcoin"
-            VALUE "FileDescription",    "faithcoin-tx (CLI faithcoin transaction editor utility)"
+            VALUE "CompanyName",        "aprncoin"
+            VALUE "FileDescription",    "aprncoin-tx (CLI aprncoin transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "faithcoin-tx"
+            VALUE "InternalName",       "aprncoin-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "faithcoin-tx.exe"
-            VALUE "ProductName",        "faithcoin-tx"
+            VALUE "OriginalFilename",   "aprncoin-tx.exe"
+            VALUE "ProductName",        "aprncoin-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

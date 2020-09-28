@@ -1,42 +1,42 @@
-faithcoin Core integration/staging tree
+aprncoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/toolboc/faithcoin.svg?branch=master)](https://travis-ci.org/toolboc/faithcoin)
+[![Build Status](https://travis-ci.org/toolboc/aprncoin.svg?branch=master)](https://travis-ci.org/toolboc/aprncoin)
 
 http://faithco.in
 
-What is faithcoin?
+What is aprncoin?
 ----------------
 
-faithcoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. faithcoin uses peer-to-peer technology to operate
+aprncoin is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. aprncoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. faithcoin Core is the name of open source
+out collectively by the network. aprncoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the faithcoin Core software, see [http://faithco.in](http://faithco.in).
+the aprncoin Core software, see [http://faithco.in](http://faithco.in).
 
 License
 -------
 
-faithcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+aprncoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/faithcoin-project/faithcoin/tags) are created
-regularly to indicate new official, stable release versions of faithcoin Core.
+completely stable. [Tags](https://github.com/aprncoin-project/aprncoin/tags) are created
+regularly to indicate new official, stable release versions of aprncoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/faithcoin-dev)
+The developer [mailing list](https://groups.google.com/forum/#!forum/aprncoin-dev)
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #faithcoin-dev.
+Developer IRC can be found on Freenode at #aprncoin-dev.
 
 Testing
 -------
@@ -70,7 +70,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to faithcoin periodically.
+Translations are converted to aprncoin periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.

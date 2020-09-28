@@ -51,7 +51,7 @@
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>Dies sind deine faithcoin Adressen zum Senden von Zahlungsmitteln.
+        <translation>Dies sind deine aprncoin Adressen zum Senden von Zahlungsmitteln.
 Überprüfe immer die Menge, sowie die Empfänger-Adresse vor dem Senden von Coins.</translation>
     </message>
     <message>

@@ -32,7 +32,7 @@
 #include "validationinterface.h"
 
 #if defined(NDEBUG)
-# error "faithcoin cannot be compiled without assertions."
+# error "aprncoin cannot be compiled without assertions."
 #endif
 
 std::atomic<int64_t> nTimeBestReceived(0); // Used only to inform the wallet of when we last received a block

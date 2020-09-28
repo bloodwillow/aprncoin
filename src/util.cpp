@@ -87,8 +87,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "faithcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "faithcoin.pid";
+const char * const BITCOIN_CONF_FILENAME = "aprncoin.conf";
+const char * const BITCOIN_PID_FILENAME = "aprncoin.pid";
 
 ArgsManager gArgs;
 bool fPrintToConsole = false;
@@ -505,7 +505,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "faithcoin";
+    const char* pszModule = "aprncoin";
 #endif
     if (pex)
         return strprintf(
@@ -530,7 +530,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "faithcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "aprncoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -540,10 +540,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/faithcoin";
+    return pathRet / "Library/Application Support/aprncoin";
 #else
     // Unix
-    return pathRet / ".faithcoin";
+    return pathRet / ".aprncoin";
 #endif
 #endif
 }

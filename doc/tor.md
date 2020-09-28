@@ -1,16 +1,16 @@
-TOR SUPPORT IN faithcoin
+TOR SUPPORT IN aprncoin
 ======================
 
-It is possible to run faithcoin as a Tor hidden service, and connect to such services.
+It is possible to run aprncoin as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on port 9150. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
 
 
-1. Run faithcoin behind a Tor proxy
+1. Run aprncoin behind a Tor proxy
 ---------------------------------
 
-The first step is running faithcoin behind a Tor proxy. This will already make all
+The first step is running aprncoin behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -31,27 +31,27 @@ outgoing connections be anonymized, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./faithcoin -proxy=127.0.0.1:9050
+	./aprncoin -proxy=127.0.0.1:9050
 
 
-2. Run a faithcoin hidden server
+2. Run a aprncoin hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
-	HiddenServiceDir /var/lib/tor/faithcoin-service/
-	HiddenServicePort 9666 127.0.0.1:9666
-	HiddenServicePort 19335 127.0.0.1:19335
+	HiddenServiceDir /var/lib/tor/aprncoin-service/
+	HiddenServicePort 1947 127.0.0.1:1947
+	HiddenServicePort 19741 127.0.0.1:19741
 
 The directory can be different of course, but (both) port numbers should be equal to
-your faithcoind's P2P listen port (9666 by default).
+your aprncoind's P2P listen port (1947 by default).
 
-	-externalip=X   You can tell faithcoin about its publicly reachable address using
+	-externalip=X   You can tell aprncoin about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/faithcoin-service/hostname. Onion addresses are given
+	                /var/lib/tor/aprncoin-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -68,49 +68,49 @@ your faithcoind's P2P listen port (9666 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./faithcoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
+	./aprncoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
 
 (obviously, replace the Onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-	./faithcoind ... -bind=127.0.0.1
+	./aprncoind ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-	./faithcoind ... -discover
+	./aprncoind ... -discover
 
-and open port 9666 on your firewall (or use -upnp).
+and open port 1947 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./faithcoin -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
+	./aprncoin -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
 
 3. Automatically listen on Tor
 --------------------------------
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-faithcoin Core has been updated to make use of this.
+aprncoin Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-faithcoin Core automatically creates a hidden service to listen on. This will positively 
+aprncoin Core automatically creates a hidden service to listen on. This will positively 
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if faithcoin Core is listening (`-listen`), and
+This new feature is enabled by default if aprncoin Core is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.
 
 Connecting to Tor's control socket API requires one of two authentication methods to be 
-configured. For cookie authentication the user running faithcoind must have write access 
+configured. For cookie authentication the user running aprncoind must have write access 
 to the `CookieAuthFile` specified in Tor configuration. In some cases this is 
 preconfigured and the creation of a hidden service is automatic. If permission problems 
 are seen with `-debug=tor` they can be resolved by adding both the user running tor and 
-the user running faithcoind to the same group and setting permissions appropriately. On 
-Debian-based systems the user running faithcoind can be added to the debian-tor group, 
+the user running aprncoind to the same group and setting permissions appropriately. On 
+Debian-based systems the user running aprncoind can be added to the debian-tor group, 
 which has the appropriate permissions. An alternative authentication method is the use 
 of the `-torpassword` flag and a `hash-password` which can be enabled and specified in 
 Tor configuration.
@@ -118,7 +118,7 @@ Tor configuration.
 4. Privacy recommendations
 ---------------------------
 
-- Do not add anything but faithcoin ports to the hidden service created in section 2.
+- Do not add anything but aprncoin ports to the hidden service created in section 2.
   If you run a web service too, create a new hidden service for that.
   Otherwise it is trivial to link them, which may reduce privacy. Hidden
   services created automatically (as in section 3) always have only one port

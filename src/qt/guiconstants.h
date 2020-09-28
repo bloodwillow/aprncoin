@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "faithcoin"
+#define QAPP_ORG_NAME "aprncoin"
 #define QAPP_ORG_DOMAIN "faithco.in"
-#define QAPP_APP_NAME_DEFAULT "faithcoin-Qt"
-#define QAPP_APP_NAME_TESTNET "faithcoin-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "aprncoin-Qt"
+#define QAPP_APP_NAME_TESTNET "aprncoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

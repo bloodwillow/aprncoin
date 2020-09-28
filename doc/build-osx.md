@@ -24,17 +24,17 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build faithcoin Core
+Build aprncoin Core
 ------------------------
 
-1. Clone the faithcoin source code and cd into `faithcoin`
+1. Clone the aprncoin source code and cd into `aprncoin`
 
-        git clone https://github.com/faithcoin-project/faithcoin
-        cd faithcoin
+        git clone https://github.com/aprncoin-project/aprncoin
+        cd aprncoin
 
-2.  Build faithcoin-core:
+2.  Build aprncoin-core:
 
-    Configure and build the headless faithcoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless aprncoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -53,37 +53,37 @@ Build faithcoin Core
 Running
 -------
 
-faithcoin Core is now available at `./src/faithcoind`
+aprncoin Core is now available at `./src/aprncoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=faithcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/faithcoin/faithcoin.conf"
+    echo -e "rpcuser=aprncoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/aprncoin/aprncoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/faithcoin/faithcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/aprncoin/aprncoin.conf"
 
-The first time you run faithcoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run aprncoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/faithcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/aprncoin/debug.log
 
 Other commands:
 -------
 
-    ./src/faithcoind -daemon # Starts the faithcoin daemon.
-    ./src/faithcoin-cli --help # Outputs a list of command-line options.
-    ./src/faithcoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/aprncoind -daemon # Starts the aprncoin daemon.
+    ./src/aprncoin-cli --help # Outputs a list of command-line options.
+    ./src/aprncoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for faithcoin development.
+You can use Qt Creator as an IDE, for aprncoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "faithcoin-qt" as project name, enter src/qt as location
+4. Enter "aprncoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
