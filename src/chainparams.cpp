@@ -124,8 +124,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x889a547fcc2185c8b4bd620a8143d565565769202a89c0609ac76c0bba437b86"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("38.29.203.106");
-        vSeeds.emplace_back("166.62.80.133");
+        vSeeds.emplace_back("38.29.203.106", true);
+        vSeeds.emplace_back("166.62.80.133", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,55);
@@ -210,8 +210,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("38.29.203.106");
-        vSeeds.emplace_back("166.62.80.133");
+        vSeeds.emplace_back("38.29.203.106", true);
+        vSeeds.emplace_back("166.62.80.133", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,117);
