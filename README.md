@@ -3,7 +3,7 @@ aprncoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/toolboc/aprncoin.svg?branch=master)](https://travis-ci.org/toolboc/aprncoin)
 
-http://faithco.in
+http://aprn.io
 
 What is aprncoin?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. aprncoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the aprncoin Core software, see [http://faithco.in](http://faithco.in).
+the aprncoin Core software, see [http://aprn.io](http://aprn.io).
 
 License
 -------
