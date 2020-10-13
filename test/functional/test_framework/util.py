@@ -441,13 +441,13 @@ def create_confirmed_utxos(fee, node, count):
     assert(len(utxos) >= count)
     return utxos
 
-# Create large OP_RETURN txouts that can be appended to a transaction
+# Create large OP_REPORT txouts that can be appended to a transaction
 # to make it large (helper for constructing large transactions).
 def gen_return_txouts():
-    # Some pre-processing to create a bunch of OP_RETURN txouts to insert into transactions we create
+    # Some pre-processing to create a bunch of OP_REPORT txouts to insert into transactions we create
     # So we have big transactions (and therefore can't fit very many into each block)
     # create one script_pubkey
-    script_pubkey = "6a4d0200"  # OP_RETURN OP_PUSH2 512 bytes
+    script_pubkey = "6a4d0200"  # OP_REPORT OP_PUSH2 512 bytes
     for i in range(512):
         script_pubkey = script_pubkey + "01"
     # concatenate 128 txouts of above script_pubkey which we'll insert before the txout for change

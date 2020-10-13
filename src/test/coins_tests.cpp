@@ -163,7 +163,7 @@ BOOST_AUTO_TEST_CASE(coins_cache_simulation_test)
                 newcoin.out.nValue = InsecureRand32();
                 newcoin.nHeight = 1;
                 if (InsecureRandRange(16) == 0 && coin.IsSpent()) {
-                    newcoin.out.scriptPubKey.assign(1 + InsecureRandBits(6), OP_RETURN);
+                    newcoin.out.scriptPubKey.assign(1 + InsecureRandBits(6), OP_REPORT);
                     BOOST_CHECK(newcoin.out.scriptPubKey.IsUnspendable());
                     added_an_unspendable_entry = true;
                 } else {

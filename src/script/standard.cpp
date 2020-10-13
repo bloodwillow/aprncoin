@@ -14,7 +14,7 @@
 typedef std::vector<unsigned char> valtype;
 
 bool fAcceptDatacarrier = DEFAULT_ACCEPT_DATACARRIER;
-unsigned nMaxDatacarrierBytes = MAX_OP_RETURN_RELAY;
+unsigned nMaxDatacarrierBytes = MAX_OP_REPORT_RELAY;
 
 CScriptID::CScriptID(const CScript& in) : uint160(Hash160(in.begin(), in.end())) {}
 
@@ -86,7 +86,7 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<std::v
     // So long as script passes the IsUnspendable() test and all but the first
     // byte passes the IsPushOnly() test we don't care what exactly is in the
     // script.
-    if (scriptPubKey.size() >= 1 && scriptPubKey[0] == OP_RETURN && scriptPubKey.IsPushOnly(scriptPubKey.begin()+1)) {
+    if (scriptPubKey.size() >= 1 && scriptPubKey[0] == OP_REPORT && scriptPubKey.IsPushOnly(scriptPubKey.begin()+1)) {
         typeRet = TX_NULL_DATA;
         return true;
     }
