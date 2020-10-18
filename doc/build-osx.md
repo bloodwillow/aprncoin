@@ -29,7 +29,7 @@ Build aprncoin Core
 
 1. Clone the aprncoin source code and cd into `aprncoin`
 
-        git clone https://github.com/aprncoin-project/aprncoin
+        git clone https://github.com/aprnets/aprncoin
         cd aprncoin
 
 2.  Build aprncoin-core:

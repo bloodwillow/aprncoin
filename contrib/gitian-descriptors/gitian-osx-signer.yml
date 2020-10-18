@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/aprncoin-project/aprncoin-detached-sigs.git"
+- "url": "https://github.com/aprnets/aprncoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "aprncoin-osx-unsigned.tar.gz"

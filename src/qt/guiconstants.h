@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "aprncoin"
-#define QAPP_ORG_DOMAIN "aprn.io"
+#define QAPP_ORG_DOMAIN "aprnets.com"
 #define QAPP_APP_NAME_DEFAULT "aprncoin-Qt"
 #define QAPP_APP_NAME_TESTNET "aprncoin-Qt-testnet"
 

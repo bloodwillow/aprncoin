@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to faithcoin-core.
 
 General faithcoin questions and/or support requests and are best directed to the [faithcointalk.io forums](https://faithcointalk.io/).
 
-For reporting security issues, please contact the faithcoin developers on the #faithcoin-dev Freenode IRC channel or alternatively you can email us at contact@aprn.io.
+For reporting security issues, please contact the faithcoin developers on the #faithcoin-dev Freenode IRC channel or alternatively you can email us at info@aprnets.com.
 
 ### Describe the issue
 

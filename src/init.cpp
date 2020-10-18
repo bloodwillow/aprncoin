@@ -525,8 +525,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/aprncoin-project/aprncoin>";
-    const std::string URL_WEBSITE = "<https://aprn.io>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/aprnets/aprncoin>";
+    const std::string URL_WEBSITE = "<https://aprnets.com>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

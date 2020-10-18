@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to aprn.io.
+to aprnets.com.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -314,8 +314,8 @@ Clone the git repositories for aprncoin and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/aprncoin-project/aprncoin
-git clone https://github.com/aprncoin-project/gitian.sigs.ltc.git
+git clone https://github.com/aprnets/aprncoin
+git clone https://github.com/aprnets/gitian.sigs.ltc.git
 ```
 
 Setting up the Gitian image
@@ -372,7 +372,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/aprncoin-project/aprncoin
+    From https://github.com/aprnets/aprncoin
     ... (new tags, new branch etc)
     --- Building for trusty amd64 ---
     Stopping target if it is up
@@ -448,7 +448,7 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/aprncoin-project/aprncoin-detached-sigs.git
+git clone https://github.com/aprnets/aprncoin-detached-sigs.git
 
 BTCPATH=/some/root/path/aprncoin
 SIGPATH=/some/root/path/aprncoin-detached-sigs
@@ -480,5 +480,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[aprncoin-project/gitian.sigs.ltc](https://github.com/aprncoin-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
+[aprnets/gitian.sigs.ltc](https://github.com/aprnets/gitian.sigs.ltc/) repository, or if that's not possible create a pull
 request. You can also mail the files to thrasher (thrasher@addictionsofware.com) and he will commit them.

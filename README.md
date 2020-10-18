@@ -3,7 +3,7 @@ aprncoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/toolboc/aprncoin.svg?branch=master)](https://travis-ci.org/toolboc/aprncoin)
 
-http://aprn.io
+http://aprnets.com
 
 What is aprncoin?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. aprncoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the aprncoin Core software, see [http://aprn.io](http://aprn.io).
+the aprncoin Core software, see [http://aprnets.com](http://aprnets.com).
 
 License
 -------
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/aprncoin-project/aprncoin/tags) are created
+completely stable. [Tags](https://github.com/aprnets/aprncoin/tags) are created
 regularly to indicate new official, stable release versions of aprncoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

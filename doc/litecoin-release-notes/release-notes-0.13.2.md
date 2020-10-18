@@ -1,13 +1,13 @@
 aprncoin Core version 0.13.2 is now available from:
 
-  <https://download.aprn.io/aprncoin-0.13.2.1/>
+  <https://download.aprnets.com/aprncoin-0.13.2.1/>
 
 This is a new major version release, including new features, various bugfixes and performance improvements, as well as updated translations.
 It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/aprncoin-project/aprncoin/issues>
+  <https://github.com/aprnets/aprncoin/issues>
 
 Compatibility
 ==============
