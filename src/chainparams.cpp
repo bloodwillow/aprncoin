@@ -77,9 +77,9 @@ public:
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.BIP34Height = 50000;
         consensus.BIP34Hash = uint256S("f003eda83a431638f1ec39824e2526d45718e12930827d2d2e34251f48ff8b50");
-        consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
-        consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
-        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
+        consensus.BIP65Height = 49999; // 51a797fa814de3b205ead926b0f0588380ff163fe6e4bcfa0e18b3d1fde7b2e6
+        consensus.BIP66Height = 49998; // b08b0ccd655988e22f80564fd77cf84ac7ba090583ba082544aba1a95a2caa07
+        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
