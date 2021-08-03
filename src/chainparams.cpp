@@ -111,10 +111,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x5A;
-        pchMessageStart[1] = 0x41;
-        pchMessageStart[2] = 0x50;
-        pchMessageStart[3] = 0x52;
+        pchMessageStart[0] = 0x50;
+        pchMessageStart[1] = 0x52;
+        pchMessageStart[2] = 0x5A;
+        pchMessageStart[3] = 0x41;
         nDefaultPort = 1947;
         nPruneAfterHeight = 100000;
 
@@ -142,7 +142,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {   1947, uint256S("0xb6534f6e777defca14267a81f87af7891571208a81e6927164a4854eb840351d")},
+                {       0, uint256S("0xc85344df19f422257d2672f7103e2d00fc31931d3684a024a987c1b94f565412")},
             }
         };
 
