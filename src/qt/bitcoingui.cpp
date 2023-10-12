@@ -37,6 +37,7 @@
 #include "util.h"
 
 #include <iostream>
+#include <boost/bind.hpp>
 
 #include <QAction>
 #include <QApplication>
