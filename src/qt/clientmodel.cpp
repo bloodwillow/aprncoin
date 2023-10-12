@@ -21,6 +21,7 @@
 #include "warnings.h"
 
 #include <stdint.h>
+#include <boost/bind.hpp>
 
 #include <QDebug>
 #include <QTimer>
